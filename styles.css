@@ -428,8 +428,8 @@
 }
 @media screen and (min-width: 1400px) {
   .audience {
-    max-width: 1400px;
-    padding: 0;
+    width: 100%;
+    padding-bottom: 110px;
   }
 }
 .audience__subtitle {
@@ -458,14 +458,13 @@
 }
 @media screen and (min-width: 1400px) {
   .audience__title {
-    margin-top: 24px;
+    margin: 24px auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 56px;
     text-align: center;
     letter-spacing: -0.5px;
     width: 555px;
-    margin: auto;
   }
 }
 .audience__text {
