@@ -672,7 +672,6 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  margin-top: auto;
 }
 @media screen and (min-width: 1400px) {
   .footer {
@@ -700,11 +699,9 @@
   border-top: 1px solid #2b292d;
   opacity: 0.1;
 }
-@media screen and (min-width: 1400px) {
-  .footer__line {
-    margin: 0;
-    display: none;
-  }
+.footer__line include for-large-up {
+  margin: 0;
+  display: none;
 }
 @media screen and (max-width: 1399px) {
   .footer .logo {
@@ -724,7 +721,6 @@
     margin: 0 auto;
     width: 1140px;
     height: 338px;
-    align-items: center;
   }
 }
 
