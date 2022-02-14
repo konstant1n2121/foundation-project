@@ -507,8 +507,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 1139px;
-    margin: auto;
-    margin-top: 111px;
+    margin: 111px auto 0;
   }
 }
 .audience-img__item {
