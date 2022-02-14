@@ -1,12 +1,14 @@
 .audience {
-  margin: 0 auto;
-
-  padding: 50px  15px;
+  padding: 50px 15px;
+  
   background-color: $color-light-blue;
+  
+  
   @include for-large-up {
+    margin: auto;
+    margin-top: 110px;
     width: 100%;
-    
-    padding-bottom: 110px;
+    padding: 0;
   }
 
   &__subtitle {

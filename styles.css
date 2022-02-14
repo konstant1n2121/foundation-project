@@ -422,14 +422,15 @@
 }
 
 .audience {
-  margin: 0 auto;
   padding: 50px 15px;
   background-color: #00a1c612;
 }
 @media screen and (min-width: 1400px) {
   .audience {
+    margin: auto;
+    margin-top: 110px;
     width: 100%;
-    padding-bottom: 110px;
+    padding: 0;
   }
 }
 .audience__subtitle {
