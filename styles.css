@@ -427,10 +427,9 @@
 }
 @media screen and (min-width: 1400px) {
   .audience {
-    margin: auto;
-    margin-top: 110px;
+    margin: 0 auto;
+    padding: 0 0 110px;
     width: 100%;
-    padding: 0;
   }
 }
 .audience__subtitle {
