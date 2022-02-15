@@ -6,7 +6,6 @@
     width: 100%;
     padding: 0;
     margin: auto;
-    margin-top: 110px;
   }
   &__details {
     @include for-large-up {
@@ -107,11 +106,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.05) 0%,
-      rgba(255, 255, 255, 1e-5) 100%
-    ),
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
     #ffffff;
 
   background-blend-mode: overlay, normal;
@@ -125,7 +120,7 @@
     max-height: 300px;
     max-width: 262px;
     margin: 111px 0;
-    
+
     &:hover {
       background-color: $color-dark-blue;
       figcaption {

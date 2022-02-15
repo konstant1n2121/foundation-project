@@ -7,7 +7,6 @@
   background-color: $color-light;
 
   @include for-large-up {
-    
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;

@@ -1,3 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #2b292d;
+}
+
+.page {
+  width: 100%;
+}
+@media screen and (min-width: 1400px) {
+  .page {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .action__button {
   width: 160px;
   height: 48px;
@@ -70,9 +93,9 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 106px;
     width: 1140px;
     margin: auto;
+    margin-bottom: 90px;
   }
 }
 .customers__row {
@@ -430,7 +453,6 @@
     width: 100%;
     padding: 0;
     margin: auto;
-    margin-top: 110px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -660,7 +682,7 @@ figure {
 .order__terms {
   font-size: 14px;
   line-height: 22px;
-  color: #2B292D99;
+  color: #2b292d99;
 }
 .order__terms-link {
   color: #3142c6;
@@ -683,12 +705,12 @@ figure {
   width: 360px;
   line-height: 26px;
   font-size: 18px;
-  color: #2B292D99;
+  color: #2b292d99;
 }
 @media screen and (min-width: 1400px) {
   .footer__description {
     display: block;
-    color: #2B292D99;
+    color: #2b292d99;
   }
 }
 .footer__line {
@@ -698,9 +720,11 @@ figure {
   border-top: 1px solid #2b292d;
   opacity: 0.1;
 }
-.footer__line include for-large-up {
-  margin: 0;
-  display: none;
+@media screen and (min-width: 1400px) {
+  .footer__line {
+    margin: 0;
+    display: none;
+  }
 }
 @media screen and (max-width: 1399px) {
   .footer .logo {
@@ -710,8 +734,8 @@ figure {
 
 .footer-navigation {
   display: flex;
-  margin: 0;
   flex-direction: column;
+  margin: 0;
 }
 @media screen and (min-width: 1400px) {
   .footer-navigation {
@@ -782,7 +806,7 @@ figure {
   line-height: 30px;
   font-size: 18px;
   list-style-type: none;
-  color: #2B292D99;
+  color: #2b292d99;
 }
 
 .footer-links {
@@ -814,7 +838,7 @@ figure {
 .terms__items {
   margin-right: 22px;
   text-decoration: none;
-  color: #2B292D99;
+  color: #2b292d99;
 }
 
 .social-links {
@@ -858,7 +882,7 @@ figure {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  color: #2B292D99;
+  color: #2b292d99;
 }
 @media screen and (min-width: 1400px) {
   .logo-vertical__description {
@@ -869,30 +893,7 @@ figure {
 .footer-logo-description {
   font-size: 18px;
   line-height: 25px;
-  color: #2B292D99;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  color: #2b292d;
-}
-
-.page {
-  width: 100%;
-}
-@media screen and (min-width: 1400px) {
-  .page {
-    max-width: 1400px;
-    margin: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+  color: #2b292d99;
 }
 
 /*# sourceMappingURL=styles.css.map */
