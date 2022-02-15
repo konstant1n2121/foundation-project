@@ -427,143 +427,146 @@
 }
 @media screen and (min-width: 1400px) {
   .audience {
-    margin: 0 auto;
-    padding: 0 0 110px;
     width: 100%;
+    padding: 0;
+    margin: auto;
+    margin-top: 110px;
   }
+}
+@media screen and (min-width: 1400px) {
+  .audience__details {
+    max-width: 555px;
+    margin: 108px auto 0 auto;
+  }
+}
+.audience__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
 }
 .audience__subtitle {
   margin: 0;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 34px;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.357143px;
+  margin-top: 17px;
   text-align: center;
 }
 @media screen and (min-width: 1400px) {
   .audience__subtitle {
-    margin-top: 108px;
-    font-size: 22px;
-    line-height: 34px;
-    text-align: center;
-  }
-}
-.audience__title {
-  margin-top: 17px;
-  margin-bottom: 0;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  letter-spacing: -0.357143px;
-}
-@media screen and (min-width: 1400px) {
-  .audience__title {
-    margin: 24px auto;
-    font-weight: 700;
     font-size: 56px;
     line-height: 56px;
-    text-align: center;
     letter-spacing: -0.5px;
-    width: 555px;
+    margin-top: 24px;
   }
 }
-.audience__text {
-  margin-top: 18px;
-  margin-bottom: 30px;
+.audience__description {
+  font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  margin: 18px 15px 0 15px;
   text-align: center;
 }
 @media screen and (min-width: 1400px) {
-  .audience__text {
-    margin: 30px auto 34px;
-    width: 555px;
-    height: 72px;
-    font-size: 24px;
-    line-height: 34px;
-    text-align: center;
+  .audience__description {
+    margin-top: 30px;
   }
+}
+.audience__actions {
+  margin-top: 30px;
 }
 @media screen and (min-width: 1400px) {
   .audience__actions {
-    text-align: center;
+    display: flex;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
   }
 }
-.audience__learn-more-btn {
-  margin-top: 12px;
+.audience__action__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1399px) {
+  .audience__action__btn {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}
+.audience__action__btn:last-child {
+  margin-bottom: 0px;
+  background-color: #fff;
   color: #000;
 }
-
-.audience-img {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 1400px) {
+  .audience__action__btn:last-child {
+    display: flex;
+    margin-right: 10px;
+    width: 158px;
+  }
+}
+.audience__icons {
+  flex: 1;
+  justify-content: center;
   align-items: center;
+  margin: 0;
   margin-top: 40px;
 }
 @media screen and (min-width: 1400px) {
-  .audience-img {
-    flex-direction: row;
+  .audience__icons {
+    display: flex;
     justify-content: space-between;
-    width: 1139px;
-    margin: 111px auto 0;
+    margin-left: 130px;
+    margin-right: 130px;
   }
-}
-.audience-img__item {
-  width: 100%;
-  height: 300px;
-  margin: 0;
-  margin-bottom: 15px;
-  background-color: #fff;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
-  background-blend-mode: overlay, normal;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-}
-@media screen and (min-width: 1400px) {
-  .audience-img__item {
-    width: 262px;
-    height: 300px;
-  }
-}
-.audience-img__item-text {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 28px;
-  text-align: center;
-}
-.audience-img__item-developer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 22px 76px;
-}
-.audience-img__item-entertainment {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 22px 74px;
-}
-.audience-img__item-athlete {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 22px 65px;
-}
-.audience-img__item-creator {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 22px 100px 22px 71px;
-}
-.audience-img .user_card_hover:hover {
-  background-color: #3141c5;
-  color: #fff;
 }
 
+.user-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 22px 20px 33px 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
+  background-blend-mode: overlay, normal;
+  cursor: pointer;
+}
+.user-card:nth-child(1) {
+  padding-top: 22px;
+}
 @media screen and (min-width: 1400px) {
-  .customers__audience {
-    padding-bottom: 30px;
+  .user-card {
+    flex-direction: row;
+    max-height: 300px;
+    max-width: 262px;
+    margin: 110px 0;
   }
+  .user-card:hover {
+    background-color: #3141c5;
+  }
+  .user-card:hover figcaption {
+    color: #fff;
+  }
+}
+.user-card__caption {
+  padding-top: 22px;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+
+figure {
+  margin: 0;
 }
 
 .order {
@@ -657,7 +660,7 @@
 .order__terms {
   font-size: 14px;
   line-height: 22px;
-  color: #2b292d99;
+  color: #2B292D99;
 }
 .order__terms-link {
   color: #3142c6;
@@ -680,12 +683,12 @@
   width: 360px;
   line-height: 26px;
   font-size: 18px;
-  color: #2b292d99;
+  color: #2B292D99;
 }
 @media screen and (min-width: 1400px) {
   .footer__description {
     display: block;
-    color: #2b292d99;
+    color: #2B292D99;
   }
 }
 .footer__line {
@@ -779,7 +782,7 @@
   line-height: 30px;
   font-size: 18px;
   list-style-type: none;
-  color: #2b292d99;
+  color: #2B292D99;
 }
 
 .footer-links {
@@ -811,7 +814,7 @@
 .terms__items {
   margin-right: 22px;
   text-decoration: none;
-  color: #2b292d99;
+  color: #2B292D99;
 }
 
 .social-links {
@@ -855,7 +858,7 @@
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  color: #2b292d99;
+  color: #2B292D99;
 }
 @media screen and (min-width: 1400px) {
   .logo-vertical__description {
@@ -866,7 +869,7 @@
 .footer-logo-description {
   font-size: 18px;
   line-height: 25px;
-  color: #2b292d99;
+  color: #2B292D99;
 }
 
 * {

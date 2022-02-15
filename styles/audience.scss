@@ -1,142 +1,145 @@
 .audience {
   padding: 50px 15px;
-
-  background-color: $color-light-blue;
+  background-color: #00a1c612;
 
   @include for-large-up {
-    margin: 0 auto;
-    padding: 0 0 110px;
     width: 100%;
+    padding: 0;
+    margin: auto;
+    margin-top: 110px;
   }
-
-  &__subtitle {
-    margin: 0;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 34px;
-    text-align: center;
+  &__details {
     @include for-large-up {
-      margin-top: 108px;
-      font-size: 22px;
-      line-height: 34px;
-      text-align: center;
+      max-width: 555px;
+      margin: 108px auto 0 auto;
     }
   }
   &__title {
-    margin-top: 17px;
-    margin-bottom: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+  }
+  &__subtitle {
+    margin: 0;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
-    text-align: center;
     letter-spacing: -0.357143px;
+    margin-top: 17px;
+    text-align: center;
+
     @include for-large-up {
-      margin: 24px auto;
-      font-weight: 700;
       font-size: 56px;
       line-height: 56px;
-      text-align: center;
       letter-spacing: -0.5px;
-      width: 555px;
+      margin-top: 24px;
     }
   }
-  &__text {
-    margin-top: 18px;
-    margin-bottom: 30px;
+  &__description {
+    font-weight: 400;
     font-size: 24px;
     line-height: 34px;
-    text-align: center;
-    @include for-large-up {
-      margin: 30px auto 34px;
+    margin: 18px 15px 0 15px;
 
-      width: 555px;
-      height: 72px;
-      font-size: 24px;
-      line-height: 34px;
-      text-align: center;
+    text-align: center;
+
+    @include for-large-up {
+      margin-top: 30px;
     }
   }
   &__actions {
+    margin-top: 30px;
+
     @include for-large-up {
-      text-align: center;
+      display: flex;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
     }
   }
-  &__learn-more-btn {
-    margin-top: 12px;
-    color: $text-color-black;
+  &__action__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include for-large-down {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 12px;
+      width: 100%;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+      background-color: $color-white;
+      color: $text-color-black;
+      @include for-large-up {
+        display: flex;
+        margin-right: 10px;
+        width: 158px;
+      }
+    }
+  }
+  &__icons {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 40px;
+    @include for-large-up {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 130px;
+      margin-right: 130px;
+    }
   }
 }
-
-.audience-img {
+.user-card {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
+  padding: 22px 20px 33px 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 1e-5) 100%
+    ),
+    #ffffff;
 
-  margin-top: 40px;
+  background-blend-mode: overlay, normal;
+  cursor: pointer;
+  &:nth-child(1) {
+    padding-top: 22px;
+  }
+
   @include for-large-up {
     flex-direction: row;
-    justify-content: space-between;
-    width: 1139px;
-    margin: 111px auto 0;
-  }
-  &__item {
-    width: 100%;
-    height: 300px;
-    margin: 0;
-    margin-bottom: 15px;
-    background-color: $color-white;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(255, 255, 255, 1e-5) 100%
-      ),
-      #ffffff;
-    background-blend-mode: overlay, normal;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    @include for-large-up {
-      width: 262px;
-      height: 300px;
+    max-height: 300px;
+    max-width: 262px;
+    margin: 110px 0;
+
+    &:hover {
+      background-color: $color-dark-blue;
+      figcaption {
+        color: $text-color-white;
+      }
     }
   }
-  &__item-text {
-    font-weight: bold;
+
+  &__caption {
+    padding-top: 22px;
+    font-weight: 700;
     font-size: 22px;
-    line-height: 28px;
     text-align: center;
   }
-  &__item-developer {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 22px 76px;
-  }
-  &__item-entertainment {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 22px 74px;
-  }
-  &__item-athlete {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 22px 65px;
-  }
-  &__item-creator {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 22px 100px 22px 71px;
-  }
-  .user_card_hover:hover {
-    background-color: $color-dark-blue;
-    color: $color-white;
-  }
 }
-.customers__audience {
-  @include for-large-up {
-    padding-bottom: 30px;
-  }
+figure {
+  margin: 0;
 }
