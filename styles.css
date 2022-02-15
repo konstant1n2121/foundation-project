@@ -549,7 +549,8 @@
     flex-direction: row;
     max-height: 300px;
     max-width: 262px;
-    margin: 110px 0;
+    margin: 40px 0;
+    margin-bottom: 110px;
   }
   .user-card:hover {
     background-color: #3141c5;
