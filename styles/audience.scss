@@ -1,14 +1,12 @@
 .audience {
   padding: 50px 15px;
-  
+
   background-color: $color-light-blue;
-  
-  
+
   @include for-large-up {
     margin: 0 auto;
     padding: 0 0 110px;
     width: 100%;
-    
   }
 
   &__subtitle {
@@ -24,7 +22,7 @@
       text-align: center;
     }
   }
-    &__title {
+  &__title {
     margin-top: 17px;
     margin-bottom: 0;
     font-weight: 700;
@@ -33,7 +31,6 @@
     text-align: center;
     letter-spacing: -0.357143px;
     @include for-large-up {
-      
       margin: 24px auto;
       font-weight: 700;
       font-size: 56px;
@@ -41,7 +38,6 @@
       text-align: center;
       letter-spacing: -0.5px;
       width: 555px;
-      
     }
   }
   &__text {
@@ -52,7 +48,7 @@
     text-align: center;
     @include for-large-up {
       margin: 30px auto 34px;
-      
+
       width: 555px;
       height: 72px;
       font-size: 24px;
@@ -81,8 +77,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 1139px;
-    margin: 111px auto 0; 
-    
+    margin: 111px auto 0;
   }
   &__item {
     width: 100%;
