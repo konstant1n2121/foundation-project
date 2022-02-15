@@ -481,9 +481,9 @@
 @media screen and (min-width: 1400px) {
   .audience__actions {
     display: flex;
-    margin-right: 15px;
     justify-content: center;
     align-items: center;
+    margin-right: 15px;
   }
 }
 .audience__action__btn {
@@ -549,8 +549,7 @@
     flex-direction: row;
     max-height: 300px;
     max-width: 262px;
-    margin: 40px 0;
-    margin-bottom: 110px;
+    margin: 111px 0;
   }
   .user-card:hover {
     background-color: #3141c5;

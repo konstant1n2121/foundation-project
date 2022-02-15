@@ -54,9 +54,9 @@
 
     @include for-large-up {
       display: flex;
-      margin-right: 15px;
       justify-content: center;
       align-items: center;
+      margin-right: 15px;
     }
   }
   &__action__btn {
@@ -124,8 +124,8 @@
     flex-direction: row;
     max-height: 300px;
     max-width: 262px;
-    margin: 40px 0;
-    margin-bottom: 110px;
+    margin: 111px 0;
+    
     &:hover {
       background-color: $color-dark-blue;
       figcaption {
