@@ -1,6 +1,6 @@
 .audience {
   padding: 50px 15px;
-  background-color: #00a1c612;
+  background-color: $color-light-blue;
 
   @include for-large-up {
     width: 100%;
