@@ -713,16 +713,28 @@ figure {
     color: #2b292d99;
   }
 }
-.footer__line {
+.footer__line-hide_desktop {
   margin: 0;
   margin-top: 40px;
-  width: 100%;
+  width: 1400px;
   border-top: 1px solid #2b292d;
   opacity: 0.1;
 }
 @media screen and (min-width: 1400px) {
-  .footer__line {
+  .footer__line-hide_desktop {
     margin: 0;
+    display: none;
+  }
+}
+.footer__line-hide_mobile {
+  margin: 0;
+  margin-top: 40px;
+  width: 1400px;
+  border-top: 1px solid #2b292d;
+  opacity: 0.1;
+}
+@media screen and (max-width: 1399px) {
+  .footer__line-hide_mobile {
     display: none;
   }
 }
